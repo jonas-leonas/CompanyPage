@@ -1,0 +1,253 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*---------------------Header Section-------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #020024;
+
+}
+
+#logo{
+    float: left;
+    padding:0px 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+nav{
+    padding: 0 25px;
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+#signUp{
+background-color:azure;
+color: #020024;
+}
+#signUp:hover{
+    background-color: #00d4ff;
+    color: azure;
+
+    }
+/*---------------------Main Hero Section-------------------------*/
+
+.main{
+    height: 600px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+   
+
+}
+main{
+    width: 1280px;
+    margin: 0 auto;
+}
+h1{
+    padding: 120px 0px 10px 0px;
+    margin:  0px;
+    color: azure;
+    font-size: 4em;
+    width: 500px;
+}
+p{
+    width: 500px;
+    font-size: 1.1em;
+    color: azure;
+}
+#heroButtons{
+    display: flex;
+    width: 500px;
+	justify-content: space-between;
+    text-align: center;
+    font-weight: 700;
+
+
+}
+.mainButton1{
+	width: 48%;
+    background-color:  rgba(2,0,36,1);
+    padding: 20px 0px;
+
+}
+.mainButton2{
+	width: 48%;
+    padding: 20px 0px;
+    border: 1px azure solid;
+
+}
+.mainButton1:hover{
+    background-color:  #090979;
+
+}
+.mainButton2:hover{
+    background-color:  #090979;
+
+
+}
+
+
+/*---------------------Ready Section-------------------------*/
+#ready{
+
+    background-image: url("images/pexels-christina-morillo-1181352.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 700px;
+    display: flex;
+}
+.boxReady{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.ready {
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+.ready h5{
+font-size: 2.6em;
+margin-bottom: 40px;    
+
+}
+.ready p{
+    font-size: 1em;
+    font-size: 1.1em;
+    width: 100%;
+    margin-bottom: 70px;    
+    }
+.ready a{
+    background-color: #00d4ff;
+    padding: 20px 40px;
+}
+
+/*---------------------NOT Hiring Section-------------------------*/
+
+#nothiring{
+    height: 400px;
+    background-color: #090979;
+    display: flex;
+    align-items: center;
+    color: azure;
+
+    
+}
+.nothiringBox {
+    width: 500px;
+   margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap:  wrap;
+}
+.nothiringBox h5 {
+font-size: 2em;
+margin: 20px;
+}
+.nothiringBox p {
+    font-size: 1em;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+
+    }
+    
+.nothiringBox a {
+border: 1px white solid;
+
+}
+/*---------------------Hiring Section-------------------------*/
+#hiring{
+    height: 100px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(6,5,82,1) 19%, rgba(7,7,97,1) 25%, rgba(9,9,121,1) 59%, rgba(0,212,255,1) 100%); 
+    display: flex;
+    align-items: center;
+
+    
+}
+.hiringBox {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.hiringBox h5{
+    width: 60%;
+    font-size: 2em;
+    color: azure;
+    padding: 5px 0px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.hiringBox a{
+    width: 30%;
+    border: 1px azure solid;
+    text-align: center;
+
+
+}
+.hiringBox a:hover{
+    border: 1px azure solid;
+    background-color:  #204cdd;
+
+}
+/*---------------------Footer Section-------------------------*/
+footer{
+    background-color: #090979;
+    color: azure;
+
+}
+#footerWrap{
+    width:800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.column{
+width: 33%;
+}
+
+ul{
+    list-style-type: none;
+  
+}
+li{
+    padding: 3px 0px;
+    
+
+}
+li a {
+    padding: 0px;
+    text-transform:uppercase;
+    font-size: 0.7em;
+}
+
+
+
+
+/*---------------------Disclaimer Section-------------------------*/
+#disclaimer{
+    background-color: #020024;
+    color: azure;
+}
+#disclaimer p{
+    width: 600px;
+    margin: 0 auto;
+    padding:25px;
+    font-size: 0.75em;
+}
