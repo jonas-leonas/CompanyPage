@@ -8,21 +8,25 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
     background-color: #020024;
+    flex-wrap: wrap;
 
 }
 
 #logo{
-    float: left;
     padding:0px 25px;
     font-weight: bold;
     color: aliceblue;
+
+}
+#logo p{
+    width: 180px;
 }
 nav{
     padding: 0 25px;
+    margin-left: auto;
 }
 a{
     padding: 15px;
@@ -42,30 +46,31 @@ color: #020024;
 /*---------------------Main Hero Section-------------------------*/
 
 .main{
-    height: 600px;
+    min-height: 600px;
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
    
 
 }
 main{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 20px;
 }
 h1{
     padding: 120px 0px 10px 0px;
     margin:  0px;
     color: azure;
     font-size: 4em;
-    width: 500px;
+    max-width: 500px;
 }
 p{
-    width: 500px;
+    max-width: 500px;
     font-size: 1.1em;
     color: azure;
 }
 #heroButtons{
     display: flex;
-    width: 500px;
+    max-width: 500px;
 	justify-content: space-between;
     text-align: center;
     font-weight: 700;
@@ -132,6 +137,107 @@ margin-bottom: 40px;
     background-color: #00d4ff;
     padding: 20px 40px;
 }
+/*---------------------Services Section-------------------------*/
+
+
+#services{
+    min-height: 500px;
+    background-color: #090979;
+    display: flex;
+    color: azure;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.services-content {
+}
+.services-content h5{
+    font-size: 2.6em;
+    margin-bottom: 40px;    
+
+    }
+.service h6{
+        font-size: 1.2em;
+        padding: 0 10px;
+    
+        }
+.all-services{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    }
+.service{
+    width: 280px;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.service img{
+    width: 120px;
+    object-fit: cover;
+
+
+}
+
+/*---------------------Team Section-------------------------*/
+#team{
+    min-height: 500px;
+    background-color: #204cdd;
+    display: flex;
+    color: azure;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.team-profiles {
+    
+
+}
+.team-profiles h5{
+    font-size: 2.6em;
+    margin-bottom: 40px;    
+
+    
+    }
+ .flex-item h6{
+        font-size: 1em;
+        padding: 5px 20;
+        margin: 0;
+        
+        }
+.flex-items{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.flex-item {
+    padding:  0 20px;
+    margin-bottom: 40px;
+
+}
+
+.flex-item img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.flex-item p{
+padding:  0 ;
+margin: 0;
+width: 100%;
+
+}
+
 
 /*---------------------NOT Hiring Section-------------------------*/
 
@@ -146,14 +252,15 @@ margin-bottom: 40px;
 }
 .nothiringBox {
     width: 500px;
-   margin: 0 auto;
+    margin: 0 auto;
     display:flex;
     justify-content: center;
     flex-wrap:  wrap;
+    padding: 0 20px;
 }
 .nothiringBox h5 {
-font-size: 2em;
-margin: 20px;
+    font-size: 2em;
+    margin: 20px;
 }
 .nothiringBox p {
     font-size: 1em;
@@ -168,6 +275,12 @@ margin: 20px;
 border: 1px white solid;
 
 }
+.nothiringBox a:hover {
+    border: 1px white solid;
+    background-color:  #204cdd;
+
+    
+    }
 /*---------------------Hiring Section-------------------------*/
 #hiring{
     height: 100px;
@@ -197,6 +310,7 @@ border: 1px white solid;
     width: 30%;
     border: 1px azure solid;
     text-align: center;
+    align-self: center;
 
 
 }
@@ -205,6 +319,10 @@ border: 1px white solid;
     background-color:  #204cdd;
 
 }
+
+
+
+
 /*---------------------Footer Section-------------------------*/
 footer{
     background-color: #090979;
@@ -212,7 +330,7 @@ footer{
 
 }
 #footerWrap{
-    width:800px;
+    max-width:800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -244,10 +362,11 @@ li a {
 #disclaimer{
     background-color: #020024;
     color: azure;
+    display: flex;
 }
 #disclaimer p{
-    width: 600px;
+    min-width: 200px;
     margin: 0 auto;
-    padding:25px;
+    padding: 25px;
     font-size: 0.75em;
 }
